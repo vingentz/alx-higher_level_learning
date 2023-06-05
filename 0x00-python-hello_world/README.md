@@ -80,4 +80,18 @@ Write a function in C that checks if a singly linked list has a cycle in it.
 	- Prototype: int check_cycle(listint_t *list);
 	- Return: 0 if there is no cycle, 1 if there is a cycle
 
+### [11. Hello, write](./100-write.py)
+* a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+	- Use the function write from the sys module
+	- You are not allowed to use print
+	- Your script should print to stderr
+	- Your script should exit with the status code 1
+
+### [12. Compile](./101-compile.py)
+* a script that compiles a Python script file.
+	- The Python file name will be stored in the environment variable $PYFILE
+
+### [13. ByteCode -> Python #1](./102-magic_calculation.py)
+* Write the Python function def magic_calculation(a, b): that does exactly the same as the given Python bytecode.
+
 ---
