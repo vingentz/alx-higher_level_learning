@@ -6,8 +6,8 @@ def magic_calculation(a, b):
             if k > a:
                 raise Exception("Too far")
             else:
-                final += (a**b)/k
+                final += (a ** b)/k
         except:
             final = b + a
             break
-        return final
+    return final
