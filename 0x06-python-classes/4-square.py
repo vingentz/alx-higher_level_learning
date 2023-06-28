@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
 '''define a square class'''
 
 
 class Square:
     '''square class with a private attribute size'''
+
     def __init__(self, size=0):
         self.size = size
 
@@ -11,9 +13,11 @@ class Square:
     def size(self):
         '''retrieve attribute'''
         return self.__size
+
     @size.setter
     def size(self, value):
         '''modify attribute value'''
+
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
