@@ -52,5 +52,5 @@ class Rectangle:
         """Set print behaviour"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        prints = "\n".join(["#" * self.__width for rows in range(self.__height)])
-        return prints
+        pri = "\n".join(["#" * self.__width for rows in range(self.__height)])
+        return pri
