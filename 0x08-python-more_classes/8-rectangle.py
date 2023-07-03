@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Empty class defining Rectangle"""
+"""Class defining Rectangle"""
 
 
 class Rectangle:
@@ -67,3 +67,15 @@ class Rectangle:
     def __repr__(self):
         """String Rep to recreate new instance"""
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Return biggest rectangle based on the area"""
+        if type(rect_1) is not Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if type(rect_2) is not Rectangle:
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        else:
+            return rect_2
