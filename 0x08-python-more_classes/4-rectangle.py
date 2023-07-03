@@ -56,5 +56,5 @@ class Rectangle:
         return pri
 
     def __repr()__(self):
-        """Spring Rep to recreate new instance"""
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+        """String Rep to recreate new instance"""
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
