@@ -50,7 +50,7 @@ class Rectangle:
 
     def __str__(self):
         """Set print behaviour"""
-        if self.__width == 0 and self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         prints = "\n".join(["#" * self.__width for rows in range(self.__height)])
         return prints
