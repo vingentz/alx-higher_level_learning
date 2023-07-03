@@ -55,6 +55,6 @@ class Rectangle:
         pri = "\n".join(["#" * self.__width for rows in range(self.__height)])
         return pri
 
-    def __repr()__(self):
+    def __repr__(self):
         """String Rep to recreate new instance"""
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
