@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" Unittest for the max_integer module"""
-
+""" Unittest for max_integer([..])
+"""
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-    """ Test for max_integer function"""
+    """Test max_integer function"""
 
     def test_empty_list(self):
         """Empty list"""
@@ -50,7 +50,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_string_list(self):
         """String"""
-        string = "vinGentz"
+        string = "vingentz"
         self.assertEqual(max_integer(string), 'y')
 
     def test_neg_float_list(self):
@@ -70,4 +70,4 @@ class TestMaxInteger(unittest.TestCase):
         
 
 if __name__ == "__main__":
-    unitest.main()
+    unittest.main()
