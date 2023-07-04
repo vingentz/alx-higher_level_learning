@@ -44,7 +44,7 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 
-#converting float infinititties to int errors 
+#converting float infinities to int errors 
 >>> add_integer(float('inf'), 2)
 Traceback (most recent call last):
 ...
