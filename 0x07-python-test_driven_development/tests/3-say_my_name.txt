@@ -1,3 +1,8 @@
+The ``say_my_name`` module
+==========================
+
+Using ``say_my_name``
+---------------------
 
 First import ``say_my_name`` from the ``say_my_name`` module:
 
