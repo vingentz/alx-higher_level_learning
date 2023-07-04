@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
-"""
-add_integer adds 2 integers
-"""
+"""add_integer adds 2 integers"""
 
 
 def add_integer(a, b=98):
     """
     Calculates addition of a and b
     Args:
-        a(int, float) the first value
-        b(int, float) the second value
+        a(int, float)
+        b(int, float)
     """
 
     if type(a) is not int and type(a) is not float:
