@@ -20,4 +20,4 @@ class Student:
             for attr in attrs:
                 if hasattr(self, attr):
                     k[attr] = getattr(self, attr)
-            return k
+        return k
