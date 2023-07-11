@@ -15,5 +15,6 @@ def pascal_triangle(n):
 
     pastri = [[1]]
     for i in range(n-1):
-        pastri.append([a+b for a, b in zip([0] + pastri[-1], pastri[-1] + [0])])
+        pastri.append([a+b for a, b in zip(
+            [0] + pastri[-1], pastri[-1] + [0])])
     return pastri
