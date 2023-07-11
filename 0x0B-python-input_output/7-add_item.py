@@ -19,4 +19,4 @@ if __name__ == "__main__":
         a = []
 
     a.extend(arg)
-    save_to_json_file(a, name)
+    save_to_json_file(a, "add_item.json")
