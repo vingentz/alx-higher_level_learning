@@ -62,7 +62,7 @@ class Base:
             with open(cls.__name__ + ".json", "r") as file:
                 list = cls.from_json_string(file.read())
                 return [cls.create(**dic) for dic in list]
-            except FileNotFoundError:
+        except FileNotFoundError:
                 return []
 
     @classmethod
@@ -97,7 +97,7 @@ class Base:
                 list = [dict([k, int(v)] for k, v in d.items())
                         for d in list]
                 return [cls.create(**d) for d in list]
-            except IOError:
+        except IOError:
                 return []
 
     @staticmethod
