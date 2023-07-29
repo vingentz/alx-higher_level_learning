@@ -63,7 +63,7 @@ class Base:
                 list = cls.from_json_string(file.read())
                 return [cls.create(**dic) for dic in list]
         except FileNotFoundError:
-                return []
+            return []
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
@@ -98,7 +98,7 @@ class Base:
                         for d in list]
                 return [cls.create(**d) for d in list]
         except IOError:
-                return []
+            return []
 
     @staticmethod
     def draw(list_rectangles, list_squares):
